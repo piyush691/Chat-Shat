@@ -163,7 +163,7 @@ class RegisterViewController: UIViewController {
                                       height: 52)
     }
     
-    @IBAction private func registerButtonTapped() {
+    @objc private func registerButtonTapped() {
         guard let email = emailField.text, let password = passwordField.text, let firstName = firstNameField.text, let lastName = lastNameField.text,
               !firstName.isEmpty,
               !lastName.isEmpty,
